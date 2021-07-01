@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html" >
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="contact_rq.css">
+    <link rel="shortcut icon" href="icon.png">
+    <title>
+        Password Request
+    </title>
+</head>
+<body onload="connect()">
+
+
+<nav  class="site-nav">
+    <button class="side-menu-trigger">Menu</button>
+    <aside class="side-menu">
+        <ul>
+            <li>
+                <a onload="connect()" href="Chat.html">
+                    <h4 style="color: white">Chat</h4>
+                </a>
+            </li>
+            <li>
+                <a  href="About_us.html">
+                    <h4 style="color: white">About us</h4>
+                </a>
+            </li>
+            <li>
+                <a  href="Regulations.html">
+                    <h4 style="color: white">Regulations</h4>
+                </a>
+            </li>
+            <li>
+                <a  href="Contact_rq.html">
+                    <h4 style="color: white">Password Request</h4>
+                </a>
+            </li>
+            <li>
+                <a  href="Contact.html">
+                    <h4 style="color: white">Contact</h4>
+                </a>
+            </li>
+
+
+
+        </ul>
+    </aside>
+</nav>
+<form class="mainc" action="mailto:SecureChatContactPL@gmail.com" method="post">
+    <p class="request_text" style="color: white" >To get your chat password send request to us:</p>
+
+    <span class="type" style="color: white">Name:</span><p></p><input class="form_input" type="text"  name="name:"/></br>
+</br>
+    </br>
+    <span class="type" style="color: white">Surename:</span><p></p><input class="form_input" type="text"  name="surename:"/></br>
+</br>
+    </br>
+    <span class="type" style="color: white">Email:</span><p></p><input class="form_input" type="text"  name="Email:"/></br>
+    <form style="text-align: center">
+        </br>
+        </br>
+        <span class="type" style="color: white">Why do you want to join to Chat?</span><p></p><input class="form_input" type="text"  name="Description:"/></br>
+        </br>
+        </br>
+        <div>
+            <input type="checkbox" id="regulations_accept" name="regulations_accept">
+            <label class="reg" for="regulations_accept">I accept <a href="Regulations.html">regulations</a></label>
+        </div>
+        </br>
+        </br>
+        <button class="buton_to_send">Send</button>
+    </form>
+</form>
+
+
+
+
+</body>
+</html>
+

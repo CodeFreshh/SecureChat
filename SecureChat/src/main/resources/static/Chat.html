@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" >
+<head>
+
+  <script type="text/javascript">
+    window.onbeforeunload = function () {return false;}
+  </script>
+  <script  TYPE="text/javascript" LANGUAGE="JavaScript">
+    var correct_password = "x3vhg5kf75d23";
+    for (var i = 0; i < 99999999999999999999; i++)
+    {
+      if (prompt('Enter your password to log in to the Chat:', '') == correct_password){
+        break;
+      }else{
+        prompt('INCORRECT PASSWORD--' +
+                'click Enter and Try again...')
+
+      }
+    }
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="chat.css">
+  <link rel="shortcut icon" href="icon.png">
+  <title>Chat</title>
+
+</head>
+<body onload="connect()" >
+<nav class="site-nav">
+  <button class="side-menu-trigger">Menu</button>
+  <aside class="side-menu">
+    <ul>
+      <li>
+        <a onload="connect()" href="Chat.html">
+          <h4 style="color: white">Chat</h4>
+        </a>
+      </li>
+      <li>
+        <a href="About_us.html">
+          <h4 style="color: white">About us</h4>
+        </a>
+      </li>
+      <li>
+        <a href="Regulations.html">
+          <h4 style="color: white">Regulations</h4>
+        </a>
+      </li>
+      <li>
+        <a  href="Contact_rq.html">
+          <h4 style="color: white">Password Request</h4>
+        </a>
+      </li>
+      <li>
+        <a  href="Contact.html">
+          <h4 style="color: white">Contact</h4>
+        </a>
+      </li>
+
+    </ul>
+  </aside>
+</nav>
+
+<div class="przesun" style="text-align: center" onload="connect()">
+  <div class="welcome" ><label><h1>Chat Log:</h1></label></div>
+  <label class="user" >User:</label></br>
+  <input class="main-chat-input" id="user" type="text" style="text-align: center"/><br>
+  <p>    </p>
+  <label class="chat-message">Your message:</label></br>
+  <textarea class="textarea" id="messageToSend" type="text" rows="3" cols="20" >
+  </textarea></br>
+
+  <div class="btn">
+  <button onclick="sendMessage()" class="glow-on-hover">Send</button>
+  </div>
+
+</div>
+
+<div class="chat-log" style="text-align: left " >
+  <form >
+  <p class="response"  id="response" ></p>
+
+  </form>
+</div>
+
+<script src="js.js"></script>
+<script src="stomp.js"></script>
+<script src="communicate.js"></script>
+
+
+</body>
+</html>

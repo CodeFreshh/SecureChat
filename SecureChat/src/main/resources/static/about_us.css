@@ -1,0 +1,96 @@
+html,body{
+    width: 100%;
+    height: 100vh;
+    background: url("galaxy13.jpg");
+    background-size: cover;
+    margin: auto 0;
+
+}
+body {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+
+}
+
+
+.site-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 20px;
+    width: 100%;
+
+}
+
+.side-menu-trigger {
+    margin-top: auto;
+    border: 0;
+    border-radius: 3px;
+    color: white;
+    background: black;
+    font-weight: bold;
+    font-family: Bahnschrift;
+    font-size: 25px;
+    text-shadow: 0 0 5px #A5F1FF, 0 0 10px #A5F1FF,
+    0 0 20px #A5F1FF, 0 0 30px #A5F1FF,
+    0 0 40px #A5F1FF;
+    font-weight: bold;
+}
+
+.side-menu {
+    font-family: Bahnschrift;
+    display: flex;
+    box-sizing: border-box;
+    position: absolute;
+    height: 100%;
+    width: 300px;
+    top: 20px;
+    right: -300px;
+    padding: 0;
+    transition: 0.3s transform ease-in-out;
+    color: #00ffd5;
+    text-shadow: 0 0 5px #A5F1FF, 0 0 10px #A5F1FF,
+    0 0 20px #A5F1FF, 0 0 30px #A5F1FF,
+    0 0 40px #A5F1FF;
+}
+
+.side-menu ul {
+    position: absolute;
+    display: flex;
+    height: calc(100% - 20px);
+    flex-wrap: wrap;
+    margin: 0 10px;
+    padding: 0;
+    list-style-type: none;
+    align-content: flex-start
+}
+
+.side-menu ul li {
+    display: flex;
+    height: 30px;
+    background: #ffffff;
+    flex-basis: 100%;
+    margin-top: 20px;
+    color: #696e9e;
+    border-radius: 5px;
+    overflow: hidden;
+
+}
+
+.side-menu ul li a {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.side-menu-trigger:focus ~ .side-menu, .side-menu:hover {
+    transform: translateX(-300px);
+}
